@@ -1,11 +1,10 @@
 [build]
+  command = "npm install && npm run build"
   publish = "public"
-  command = "echo 'No build command required'"
-
-[functions]
-  directory = "functions"
+  functions = "functions"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = true
