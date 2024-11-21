@@ -1,0 +1,20 @@
+{
+  "name": "omok-game",
+  "version": "1.0.0",
+  "description": "A multiplayer Omok (Five-in-a-row) game",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'No build command required'",
+    "deploy": "npm run build"
+  },
+  "author": "sihoo67",
+  "license": "Public Domain",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
