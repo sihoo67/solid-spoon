@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // 방 만들기
   createRoomBtn.addEventListener('click', () => {
-    socket = new WebSocket('wss://your-server-url'); // 실제 서버 URL로 변경
+    socket = new WebSocket('wss://localhost:5000'); // 실제 서버 URL로 변경
     socket.onopen = () => {
       socket.send(JSON.stringify({ type: 'createRoom' }));
     };
