@@ -1,15 +1,11 @@
 [build]
-  # 배포할 디렉토리 설정
   publish = "public"
-  # 빌드 명령어 설정
   command = "echo 'No build command required'"
 
 [functions]
-  # Netlify 함수 디렉토리 설정
   directory = "functions"
 
 [[redirects]]
-  # 모든 요청을 index.html로 리디렉션하여 SPA(단일 페이지 애플리케이션)로 동작하게 설정
   from = "/*"
   to = "/index.html"
   status = 200
