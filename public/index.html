@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오목 게임</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오목 게임</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>오목 게임</h1>
-        <div id="room-section">
-            <button id="createRoomButton">방 만들기</button>
-            <input type="text" id="joinRoomCode" placeholder="방 코드 입력">
-            <button id="joinRoomButton">방 참가</button>
-            <p id="roomInfo"></p>
-        </div>
-        <canvas id="board" width="600" height="600"></canvas>
-        <div class="controls">
-            <button id="resetButton">새로 시작</button>
-            <p>현재 차례: <span id="currentPlayer">흑</span></p>
-        </div>
-    </div>
-    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
-    <script src="script.js"></script>
+  <div id="game-container">
+    <h1>오목 게임</h1>
+    <div id="board"></div>
+    <button id="create-room-btn">방 만들기</button>
+    <input type="text" id="room-code" placeholder="방 코드 입력" />
+    <button id="join-room-btn">방 참가</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
